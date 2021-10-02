@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+
+.noidung
+{
+    display: flex; 
+    flex-wrap: wrap; /*bọc lại vô khối*/
+}
+.noidung .khoianh
+{
+    width: 25%;/*4 cột*/
+    box-sizing: border-box; /*dùng padding k nở cái cột này ra*/
+    padding: 8px;
+}
+.khoianh img {width:100%;}
+.khoianh figcaption
+{
+    background: pink;
+    text-align: center;
+    padding: 2px 1px;
+}
+.noidung .nhandoi{width: 50%;}
+
+.duocchon
+{
+    background : white;
+    
+}
+.danhmuc .all
+{
+    background:#f0ad4e;
+    border-color: rgba(255, 166, 0, 0.89);
+    color: white;
+
+}
+@media (max-width: 576px)   /*reponsive trên iphone*/
+{
+    .noidung.khoianh {width: 100%;}
+    .noidung.nhandoi {width: 100%;}
+}
+@media (min-width:577px) and (max-width: 768px) /*reponsive trên ipad*/
+{
+    .noidung.khoianh {width: 50%;}
+   
+}
